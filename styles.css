@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-option {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+.product-option input[type="radio"] {
+    display: none;
+}
+
+.product-option label {
+    display: block;
+    cursor: pointer;
+}
+
+.option-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.unit-title {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.discount {
+    background: #28a745;
+    font-weight: normal;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.tag {
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 0.75em;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 10px;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.popular {
+    border-color: #ff69b4;
+    background-color: #fff0f5;
+}
+
+.expandable {
+    display: none;
+    margin-top: 15px;
+}
+
+.selection-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.selection {
+    flex: 1;
+}
+
+.selection label {
+    display: block;
+    font-size: 0.85em;
+    margin-bottom: 4px;
+}
+
+.selection select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.delivery {
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+}
+
+.total {
+    text-align: center;
+    font-weight: bold;
+    color: #e60023;
+    margin-top: 10px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.product-option.active {
+    border: 2px solid #2C742F;
+    /* Exact green border */
+    background-color: #F2FFF3;
+    /* Light green background */
+}
+
+.total-section p {
+    margin: 0;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+}
