@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Selection</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="product-container">
+        <h1>YAY! It's BOGO</h1>
+
+        <!-- Unit Options -->
+        <div class="product-option" data-id="1">
+            <input type="radio" name="unit" id="unit-1" onclick="toggleExpand(1)">
+            <label for="unit-1">
+        <div class="option-header">
+          <span class="unit-title">1 Unit</span>
+          <span class="discount">10% Off</span>
+        </div>
+        <div class="price-row">
+          <span class="price">$10.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+      </label>
+            <div class="expandable" id="expandable-1">
+                <div class="selection-row">
+                    <div class="selection">
+                        <label for="size-1a">Size</label>
+                        <select id="size-1a"><option>S</option><option>M</option><option>L</option></select>
+                    </div>
+                    <div class="selection">
+                        <label for="color-1a">Colour</label>
+                        <select id="color-1a"><option>Black</option><option>White</option><option>Blue</option></select>
+                    </div>
+                </div>
+                <div class="selection-row">
+                    <div class="selection">
+                        <label for="size-1a">Size</label>
+                        <select id="size-1a"><option>S</option><option>M</option><option>L</option></select>
+                    </div>
+                    <div class="selection">
+                        <label for="color-1a">Colour</label>
+                        <select id="color-1a"><option>Black</option><option>White</option><option>Blue</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-option" data-id="2">
+            <input type="radio" name="unit" id="unit-2" onclick="toggleExpand(2)">
+            <label for="unit-2">
+        <div class="option-header">
+          <span class="unit-title">2 Unit</span>
+          <span class="discount">20% Off</span>
+          <span class="tag">MOST POPULAR</span>
+        </div>
+        <div class="price-row">
+          <span class="price">$18.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+      </label>
+            <div class="expandable" id="expandable-2">
+                <div class="selection-row">
+                    <div class="selection">
+                        <label for="size-2a">Size</label>
+                        <select id="size-2a"><option>S</option><option>M</option><option>L</option></select>
+                    </div>
+                    <div class="selection">
+                        <label for="color-2a">Colour</label>
+                        <select id="color-2a"><option>Black</option><option>White</option><option>Blue</option></select>
+                    </div>
+                </div>
+                <div class="selection-row">
+                    <div class="selection">
+                        <label for="size-2b">Size</label>
+                        <select id="size-2b"><option>S</option><option>M</option><option>L</option></select>
+                    </div>
+                    <div class="selection">
+                        <label for="color-2b">Colour</label>
+                        <select id="color-2b"><option>Black</option><option>White</option><option>Blue</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-option" data-id="3">
+            <input type="radio" name="unit" id="unit-3" onclick="toggleExpand(3)">
+            <label for="unit-3">
+        <div class="option-header">
+          <span class="unit-title">3 Unit</span>
+          <span class="discount">30% Off</span>
+        </div>
+        <div class="price-row">
+          <span class="price">$24.00 USD</span>
+          <span class="original-price">$24.00 USD</span>
+        </div>
+      </label>
+            <div class="expandable" id="expandable-3">
+                <div class="selection-row">
+                    <div class="selection">
+                        <label for="size-3a">Size</label>
+                        <select id="size-3a"><option>S</option><option>M</option><option>L</option></select>
+                    </div>
+                    <div class="selection">
+                        <label for="color-3a">Colour</label>
+                        <select id="color-3a"><option>Black</option><option>White</option><option>Blue</option></select>
+                    </div>
+                </div>
+                <div class="selection-row">
+                    <div class="selection">
+                        <label for="size-3b">Size</label>
+                        <select id="size-3b"><option>S</option><option>M</option><option>L</option></select>
+                    </div>
+                    <div class="selection">
+                        <label for="color-3b">Colour</label>
+                        <select id="color-3b"><option>Black</option><option>White</option><option>Blue</option></select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="total-section">
+            <p class="delivery">Free Delivery</p>
+            <p class="total">Total: <span class="total-price">$18.00 USD</span></p>
+        </div>
+
+        <button class="add-to-cart"> + Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
